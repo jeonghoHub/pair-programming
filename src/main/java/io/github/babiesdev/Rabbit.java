@@ -1,9 +1,6 @@
 package io.github.babiesdev;
 
-public class Rabbit {
-    public Rabbit(Position position) {
-
-    }
+public record Rabbit(Position position) {
 
     public void leftMove(int moveCount) {
 
@@ -14,6 +11,6 @@ public class Rabbit {
     }
 
     public Position position() {
-        return new Position(0);
+        return position;
     }
 }
