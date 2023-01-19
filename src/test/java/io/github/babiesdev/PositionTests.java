@@ -24,7 +24,7 @@ class PositionTests {
 
     @Test
     void 자신의_값을_반환한다() {
-        var position = new Position(0);
+        final var position = new Position(0);
 
         assertThat(position.value()).isEqualTo(0);
     }
